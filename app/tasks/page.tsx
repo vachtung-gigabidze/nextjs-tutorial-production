@@ -1,7 +1,6 @@
-import React from 'react'
 import TaskList from '../components/taskList'
-import DeleteForm from '../components/deleteForm'
 import TaskFormCustom from '../components/taskFormCustom'
+export const dynamic = 'force-dynamic';
 
 const TaskPage = () => {
   return (
