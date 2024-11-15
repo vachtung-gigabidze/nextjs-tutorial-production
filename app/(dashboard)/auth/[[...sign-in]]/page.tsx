@@ -1,10 +1,8 @@
-import React from 'react'
-
 const SignInPage = ({params}:any) => {
     console.log(params)
   return (
     <div><h1 className='text-7xl'>
-        SignInPage
+        SignInPage ed
         </h1></div>
   )
 }

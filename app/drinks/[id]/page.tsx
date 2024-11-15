@@ -19,8 +19,9 @@ const SingleDrinkPage = async ({params} : any)  => {
     const drink = await fetchDrink(id);
     const title = drink?.drinks[0]?.strDrink;
     const img = drink?.drinks[0]?.strDrinkThumb;
+    const instructions = drink?.drinks[0]?.strInstructions;
+    console.log(drink)
 
-    console.log(title, img)
   return (
     <div>
         <Link href='/drinks' className="btn btn-primary mt-8 mb-12">
@@ -30,6 +31,12 @@ const SingleDrinkPage = async ({params} : any)  => {
         
         <h1 className="text-4xl mb-8">
             {title}
+
+        </h1>
+        <h1 className="text-4xl mb-8">
+
+
+            {instructions}
         </h1>
     </div>
   )
